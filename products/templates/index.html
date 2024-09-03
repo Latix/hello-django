@@ -1,0 +1,9 @@
+<h1>Products</h1>
+<div style="display: flex;gap: 20px;flex-wrap: wrap;justify-content: flex-start;text-align: center;">
+    {% for product in products %}
+        <div style="margin-bottom: 20px">
+            <img width="300" height="auto" src="{{product.image}}" alt="Image" />
+            <p>{{product.name}} (${{product.price}})</p>
+        </div>
+    {% endfor %}
+</div>
